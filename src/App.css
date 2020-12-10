@@ -1,0 +1,594 @@
+/*navigator.userAgent.indexOf() //use this for changing styling for different web browsers*/
+
+.start-button {
+  height: 40px;
+  width: 280px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(46, 46, 255);
+  outline: none;
+  color: white;
+  margin-left: 10px;
+  display: block;
+  position: absolute;
+  bottom: 66px;
+  border: 0px;
+}
+
+.settings-container{
+  position: relative;
+  height: 540px;
+}
+
+.start-button:hover {
+  background-color: blue;
+}
+
+.menu-lst-item {
+  display: inline;
+  list-style: none;
+}
+
+.menu {
+  padding-left: 10px;
+}
+
+.sidebar-title {
+  text-align: center;
+}
+
+.menu-container {
+
+}
+
+.menu-item {
+  outline: none;
+  border: 0px;
+  border-radius: 0px;
+  width: 40px;
+  height: 20px;
+  background-color: white;
+}
+
+.menu-item:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.lst-item-li {
+  list-style: none;
+}
+
+.built-in-list {
+  margin-bottom: 5px;
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.built-in-list:before {
+  content: '✓';
+}
+
+.info-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+} 
+
+.sidebar-container {
+  width: 300px;
+  height: 600px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: block;
+  margin-left: 10px;
+  position: absolute
+}
+
+.player-lst {
+  margin-left: 10px;
+  overflow-y: scroll;
+  height: 460px;
+}
+
+.roster-lst {
+  margin-left: 10px;
+  overflow-y: scroll;
+  height: 460px;
+  margin-top: 16.7px;
+}
+
+.lst-item {
+  height: 35px;
+  border-bottom: 1px solid lightgray;
+  display: block;
+  position: relative;
+  margin-right: 10px;
+  padding-top: 4px;
+}
+
+.lst-item:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.lst-item:hover > .draft-button {
+  display: block;
+}
+
+.draft-button {
+  height: 30px;
+  width: 50px;
+  float: right;
+  display: none;
+  position: static;
+  margin: 0;
+  margin-top: 1px;
+  border-radius: 10px;
+  background-color: rgb(46, 46, 255);
+  color: white;
+  outline: none;
+  border: 0px;
+}
+
+.draft-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+
+.player-info-container {
+  position: static;
+  display: inline-block;
+}
+
+.player-info-1 {
+  margin: 0;
+}
+
+.player-info-2 {
+  margin: 0;
+  font-size: 12px;
+}
+
+#dropdown {
+  width: 250px;
+  margin-left: 25px;
+}
+
+.dropdown-title {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.settings-title {
+  width: 280px; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin-left: 10px;
+  margin-top: 40px;
+} 
+
+.settings-title-span { 
+  background:#fff; 
+  padding: 0 10px; 
+}
+
+.square {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #999;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: -2px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-rows {
+  text-align: center;  
+  padding-right: 20px;
+  padding-left: 18px;
+  padding-bottom: 18px;
+  display: inline-block;
+  white-space: normal;
+}
+
+.draft-board-container {
+  height: 600px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  max-width: fit-content;
+  margin-right: 10px;
+}
+
+.upper-row {
+}
+
+.team-name {
+  outline: none;
+  background-color: white;
+  width: 100px;
+  margin-bottom: 2px;
+  margin-right: -2px;
+  display: inline-block;
+  border: none;
+  height: 60px;
+}
+
+.team-name:active {
+  color: black;
+}
+
+.all {
+  white-space: nowrap;
+  margin: auto;
+  max-width: fit-content;
+  position: relative;
+}
+
+.section {
+  display: contents;
+}
+
+.welcome-container {
+  width: 1176px;
+}
+
+.welcome-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.collapsed-sidebar-container {
+  width: 50px;
+  height: 600px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: block;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.collapse-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  /*position: absolute;*/
+  margin-left: 10px;
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+
+.collapse-button:hover {
+  color: rgb(150, 150, 150);
+  border-bottom: 2px solid rgb(150, 150, 150);
+  margin-bottom: 0;
+}
+
+.collapsed-collapse-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  /*position: absolute;*/
+  margin-left: 9px;
+  margin-top: 6px;
+}
+
+.collapsed-collapse-button:hover {
+  color: rgb(150, 150, 150);
+  border-right: 2px solid rgb(150, 150, 150);
+  margin-left: 9px;
+}
+
+.collapsed-draftPicks-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 21.5px;
+  line-height: 20px;
+  padding: 5px;
+  position: absolute;
+  left: 9px;
+  bottom: 20px;
+}
+
+.collapsed-draftPicks-button:hover {
+  color: rgb(150, 150, 150);
+  border-right: 2px solid rgb(150, 150, 150);
+  left: 9px;
+}
+
+.draftPicks-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 20.2px;
+  line-height: 20px;
+  padding: 5px;
+  margin-top: 6px;
+}
+
+.draftPicks-button:hover {
+  color: rgb(150, 150, 150);
+  border-bottom: 2px solid rgb(150, 150, 150);
+  margin-top: 6px;
+}
+
+.collapsed-rosters-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 20.2px;
+  line-height: 20px;
+  padding: 5px;
+  position: absolute;
+  left: 9px;
+  bottom: -20px;
+}
+
+.collapsed-rosters-button:hover {
+  color: rgb(150, 150, 150);
+  border-right: 2px solid rgb(150, 150, 150);
+  left: 9px;
+}
+
+.rosters-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 20.2px;
+  line-height: 20px;
+  padding: 5px;
+  margin-top: 6px;
+}
+
+.rosters-button:hover {
+  color: rgb(150, 150, 150);
+  border-bottom: 2px solid rgb(150, 150, 150);
+  margin-top: 6px;
+}
+
+.collapsed-restart-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  position: absolute;
+  left: 9px;
+  bottom: 6px;
+}
+
+.collapsed-restart-button:hover {
+  color: rgb(150, 150, 150);
+  border-right: 2px solid rgb(150, 150, 150);
+  left: 9px;
+}
+
+.restart-button {
+  border: none;
+  color: rgb(165, 165, 165);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  /*position: absolute;*/
+  margin-right: 9px;
+  margin-top: 7px;
+  margin-bottom: 2px;
+  float: right;
+}
+
+.restart-button:hover {
+  color: rgb(150, 150, 150);
+  border-bottom: 2px solid rgb(150, 150, 150);
+  margin-bottom: 0;
+}
+
+.collapsed-settings-button {
+  border: none;
+  color: rgb(150, 150, 150);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  margin-left: 9px;
+  border-right: 2px solid rgb(150, 150, 150);
+}
+
+.settings-button {
+  border: none;
+  color: rgb(150, 150, 150);
+  outline: none;
+  font-size: 25px;
+  line-height: 20px;
+  padding: 5px;
+  margin-top: 6px;
+}
+
+.restart-alert {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  border: 3px solid blue;
+  white-space: pre-line;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.undo-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+}
+
+.confirm-button {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 100px;
+}
+
+.restart-text {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  font-size: 14px;
+}
+
+.all-div {
+  white-space: nowrap;
+  margin: auto;
+  max-width: fit-content;
+  position: relative;
+}
+
+.inline-menuIcon {
+  font-size: 25px;
+}
+
+.inline-restartIcon {
+  display: inline-block;
+  transform: rotate(270deg);
+  font-size: 30px;
+}
+
+.inline-startButton {
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(46, 46, 255);
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-size: 14px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  line-height: 10px;
+}
+
+.inline-draftButton {
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(46, 46, 255);
+  color: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-size: 14px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  line-height: 10px;
+}
+
+.instruction-list {
+  text-align: left;
+  margin-left: 340px;
+  font-weight: bold;
+}
+.instruction-item-1 {
+  margin-bottom: 7px;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.instruction-item {
+  display: list-item;
+  list-style-position: inside;
+}
+
+.sidebar-menu {
+  margin: -1px;
+  height: fit-content;
+}
+
+.restart-icon {
+  color: rgb(199, 199, 199);
+} 
+
+.vertical-center-menu {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center-menu {
+  position: absolute;
+  margin-top: -38px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.inline-roster-icon {
+  color: rgb(165, 165, 165);
+  font-size: 35px;
+}
+
+.inline-restart-icon {
+  color: rgb(165, 165, 165);
+  font-size: 35px;
+  margin-top: 6px;
+}
+
+.restart-alert-icon {
+  margin-top: 15px;
+  font-size: 50px;
+}
+
+.draft-position {
+  display: none;
+}
+
+.square:hover > .draft-position {
+  display: block;
+}
+
+.summary-container {
+  width: 1176px;
+  border: 2px solid red;
+}
+
+.toggle-summary {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
